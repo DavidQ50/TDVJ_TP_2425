@@ -25,6 +25,11 @@ Atirar:
 Atirar- Pressionar a tecla "Espaço".
 
 Pasta Content:
+-> ProjectStates - Pasta que guarda os diferentes estados do jogo
+	  EndState.cs - Ficheiro que produz a tela do fim do jogo;
+	  GameState.cs - Ficheiro que produz o estado principal do jogo, responsável pela lógica e física do mesmo;
+	  MenuState.cs -	Ficheiro que produz a tela do menu principal;
+	  State.cs - Ficheiro que serve como base para os outros estados.
 
 Classes:
 

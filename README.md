@@ -50,6 +50,7 @@ TheDic.cs:
 Análise a partes do código:
 
 Defeitos a apontar sobre o jogo:
+-> Só se consegue fazer uma ação de cada vez
 
 
 

@@ -34,18 +34,44 @@ Pasta Content:
 Classes:
 
 Animation.cs:
+Esta classe serve para gerir as animações no jogo.
+Ela controla qual frame da animação deve ser exibido, a posição do desenho, a rotação, a escala e outros efeitos visuais. Além disso, ela atualiza a animação com base no estado do herói (hero) e no estado do jogo (state), mudando o frame atual no ritmo apropriado.
+
 Ball.cs:
+A classe Ball representa uma bola no jogo. Ela gerencia a posição, movimentação, colisões e a aparência da bola, incluindo sua interação com paredes e outros objetos (como jogadores), além de atualizar a física da bola, como gravidade e velocidade.
+
 BotKeyboard:
+A classe BotKeyboard é responsável por controlar o comportamento de um bot no jogo. Ela define a lógica de movimentação, salto e disparo do bot, além de calcular a direção com base na posição e velocidade dos alvos (bolas) mais próximos.
+
 Button.cs:
+A classe Button representa um botão interativo no jogo. Ela detecta cliques e alterações no estado do mouse, muda a cor ao passar o cursor sobre ela, e executa ações configuradas em eventos de clique.
+
 Camera.cs:
+A classe Camera gerencia a visualização do jogo, ajustando a posição e o zoom para focar em objetos ou áreas específicas da cena. Ela utiliza matrizes de transformação para aplicar escala, translação e rotação, garantindo que a câmera acompanhe o objeto de foco (implementado pela interface IFocus), enquanto respeita limites como bordas da tela e ajuste de zoom com o mouse.
+
 Drawable.cs:
+A classe Drawable representa objetos desenháveis no jogo. Ela gerencia propriedades como textura, posição, cor, escala e rotação, permitindo que os objetos sejam renderizados na tela com o método Draw.
+
 Fire.cs:
+A classe Fire representa um disparo feito pelo jogador no jogo. Ela controla a lógica de colisão com bolas, gerencia o crescimento vertical do disparo, e atualiza o estado visual (ex.: quando deve ser desenhado ou removido).
+
 GameObject.cs:
+A classe GameObject representa objetos no jogo "Bubble Trouble" que podem se mover, interagir com o ambiente, reagir a comandos do jogador (como andar, pular e disparar), detectar colisões e exibir animações. É usada principalmente para gerenciar o comportamento e as ações de personagens jogáveis ou elementos dinâmicos no jogo.
+
 MyKeyBoard.cs:
+A classe MyKeyBoard define controles de teclado para o jogo "Bubble Trouble". Ela tem uma classe base abstrata, BaseKeys, que especifica métodos para verificar ações como pressionar ou soltar teclas (direcionais, espaço, shift). A classe concreta UserKeys implementa esses métodos, associando teclas específicas a essas ações e detectando o estado do teclado em tempo real.
+
 Page.cs:
+A classe Page gerencia texturas e animações para diferentes estados de um herói no jogo "Bubble Trouble". Ela carrega texturas, identifica regiões específicas (retângulos) e pontos de origem para animações, define o ritmo (Tempo) baseado no estado do herói e torna o fundo transparente para exibição correta.
+
 S.cs:
+A classe estática S serve como um espaço global para armazenar e gerenciar dados e recursos compartilhados no jogo "Bubble Trouble". Ela contém referências a elementos essenciais, como dispositivos gráficos, gerenciadores de conteúdo, objetos do jogo (como bolas e caixas surpresa), configurações de tela, estados do jogo, e funções utilitárias, como a criação do chão no cenário.
+
 SurpriseBox.cs:
+A classe SurpriseBox representa caixas surpresa no jogo "Bubble Trouble". Essas caixas interagem com o jogador através de colisões, aplicando efeitos como adicionar pontos, aumentar o tempo do jogo, congelar o personagem, ou até penalidades. Elas também possuem comportamento de gravidade e desaparecem após um tempo ou interação.
+
 TheDic.cs:
+A classe estática TheDic serve para inicializar e armazenar um dicionário global que organiza as páginas (Page) de animações por heróis (Heros) e seus estados (States) no jogo "Bubble Trouble". Ela verifica os arquivos de conteúdo e mapeia os estados e heróis para suas respectivas animações.
 
 Análise a partes do código:
 

@@ -28,6 +28,20 @@ Pasta Content:
 
 Classes:
 
+Animation.cs:
+Ball.cs:
+BotKeyboard:
+Button.cs:
+Camera.cs:
+Drawable.cs:
+Fire.cs:
+GameObject.cs:
+MyKeyBoard.cs:
+Page.cs:
+S.cs:
+SurpriseBox.cs:
+TheDic.cs:
+
 Análise a partes do código:
 
 Defeitos a apontar sobre o jogo:

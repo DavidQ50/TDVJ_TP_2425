@@ -23,7 +23,10 @@ Saltar - Pressionar a seta para cima.
 Atirar - Pressionar a tecla "Espaço".
 
 ## Pasta Content - Pasta que contém ficheiros .png, .mgcontent e .xnb
-Na pasta "Content", encontramos as pastas "Goblin", "Man", "Naruto" (personagens jogáveis) e "SurpriseBox" (itens do jogo) que contém PNGs dos diversos backgrounds do jogo, telas inicial e de resultados (vitória, empate ou derrota), spritesheets para as animações das ações do jogador (idle, walk e fire) e os botões (exit e play). Ainda na pasta "Content", encontramos as pastas "bin" e "obj", que ambas possuem os mesmos conteúdos das quatro pastas mecionadas anteriormente, agora em formatos .xnb e .mgcontent, respetivamente. Estas duas pastas são geradas automáticamente durante a compilação do projeto e servem para converter os ficheiros .png em formato binário, otimizando-os para serem carregados o mais rapidamente possível durante a execução do jogo.
+Na pasta "Content", encontramos as pastas "Goblin", "Man", "Naruto" (personagens jogáveis) e "SurpriseBox" (itens do jogo) que contém PNGs dos diversos backgrounds do jogo, telas inicial e de resultados (vitória, empate ou derrota), spritesheets para as animações das ações do jogador (idle, walk e fire) e os botões (exit e play). Ainda na pasta "Content", encontramos as pastas "bin" e "obj", que ambas possuem os mesmos conteúdos das quatro pastas mecionadas anteriormente, agora em formatos .xnb e .mgcontent, respetivamente. Estas duas pastas são geradas automáticamente durante a compilação do projeto e servem para converter os ficheiros .png em formato binário, otimizando-os para serem carregados o mais rapidamente possível durante a execução do jogo. Por fim, temos três ficheiros:
+-.DS_Store é um ficheiro gerado automáticamente pelo macOS para armazenar informações de visualização de pastas; 
+-Content.mgcb diz ao MonoGame quais recursos precisam ser convertidos em .xnb;
+-SpriteFont1.spritefont é um template XML que define uma fonte de texto que o jogo pode usar.
 
 ## ProjectStates - Pasta que guarda os diferentes estados do jogo;
 EndState.cs - Ficheiro que produz a tela do fim do jogo;

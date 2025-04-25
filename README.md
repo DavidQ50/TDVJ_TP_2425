@@ -73,15 +73,15 @@ TheDic.cs:
 A classe estática TheDic serve como um repositório centralizado para armazenar e gerenciar informações relacionadas aos heróis (Heros) e seus estados (States) no jogo "Bubble Trouble". Ela utiliza um dicionário aninhado para organizar páginas (Page) associadas a cada combinação de herói e estado. A propriedade estática Big é um dicionário que mapeia heróis para outro dicionário, onde cada estado do herói está associado a um objeto Page, organizando os dados de maneira clara e eficiente para acesso rápido. O método estático Init inicializa o dicionário Big, iterando sobre todos os heróis e estados definidos nas enumerações Heros e States. Para cada combinação de herói e estado, o método verifica se existe um arquivo correspondente no diretório /Content/<hero>/<state>.xnb. Caso o arquivo exista, ele cria um objeto Page para essa combinação e o adiciona ao dicionário. A classe carrega dinamicamente os dados necessários durante a inicialização, garantindo que apenas os estados e heróis com arquivos válidos sejam adicionados ao dicionário. Isso permite gerenciar facilmente os recursos associados aos heróis e estados no jogo, como animações ou texturas. Em resumo, a classe TheDic organiza e gerencia dados de heróis e seus estados, carregando recursos de forma dinâmica e armazenando-os em uma estrutura de dicionário aninhado, o que facilita o gerenciamento eficiente de recursos no jogo.
 
 Análise a partes do código:
--> SurpriseBox.cs - Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando ocorre uma colisão.
-
-	- Variáveis:
- 
- 		![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
-   		gravitation: Simula a gravidade;
-     		drc: Direção do movimento;
-       		timeDisappearBox: Tempo até a caixa desaparecer;
-	 	numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
+- SurpriseBox.cs
+	Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando ocorre uma colisão.
+	
+ ->Variáveis
+  	![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
+   	gravitation: Simula a gravidade;
+     	drc: Direção do movimento;
+       	timeDisappearBox: Tempo até a caixa desaparecer;
+	 numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
 
 
 Defeitos a apontar sobre o jogo:

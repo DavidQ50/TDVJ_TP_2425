@@ -135,10 +135,5 @@ Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa
 
 -> Não há botão de replay ou exit ao terminar um jogo;
 
-
-
-
-
-
-
+## Link do repositório do jogo
 https://github.com/YuvalBakirov/bubble-trouble

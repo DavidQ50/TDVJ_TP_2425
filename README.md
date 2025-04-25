@@ -17,18 +17,18 @@ amarela é uma bola cuja saúde e o número de pontos que ela lhe dá são núme
 Comandos para o jogo:
 
 Movimentos:
-Movimentar para a direita- Pressionar a seta direita.
-Movimentar para a esquerda- Pressionar a seta esquerda.
-Saltar- Pressionar a seta para cima.
+Movimentar para a direita - Pressionar a seta direita.
+Movimentar para a esquerda - Pressionar a seta esquerda.
+Saltar - Pressionar a seta para cima.
 
 Atirar:
-Atirar- Pressionar a tecla "Espaço".
+Atirar - Pressionar a tecla "Espaço".
 
 Pasta Content:
 -> ProjectStates - Pasta que guarda os diferentes estados do jogo
 	  EndState.cs - Ficheiro que produz a tela do fim do jogo;
 	  GameState.cs - Ficheiro que produz o estado principal do jogo, responsável pela lógica e física do mesmo;
-	  MenuState.cs -	Ficheiro que produz a tela do menu principal;
+	  MenuState.cs - Ficheiro que produz a tela do menu principal;
 	  State.cs - Ficheiro que serve como base para os outros estados.
 
 Classes:
@@ -74,9 +74,10 @@ TheDic.cs:
 A classe estática TheDic serve para inicializar e armazenar um dicionário global que organiza as páginas (Page) de animações por heróis (Heros) e seus estados (States) no jogo "Bubble Trouble". Ela verifica os arquivos de conteúdo e mapeia os estados e heróis para suas respectivas animações.
 
 Análise a partes do código:
+-> SurpriseBox.cs - Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando ocorre uma colisão.
 
 Defeitos a apontar sobre o jogo:
--> Só se consegue fazer uma ação de cada vez
+-> Só se consegue fazer uma ação de cada vez;
 
 
 

@@ -77,7 +77,7 @@ A classe estática TheDic serve como um repositório centralizado para armazenar
 Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando 		ocorre uma colisão.
 	
 - Variáveis
- 
+  
 	![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
 
 	gravitation: Simula a gravidade;
@@ -88,26 +88,40 @@ Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa
 
 	numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
 
-## Defeitos a apontar sobre o jogo:
+- Construtor
+  
+	![image_2025-04-25_183746741](https://github.com/user-attachments/assets/1ef078ba-d53c-4272-b16e-6c996e979810)
 
+  	O construtor permite inicializar as variáveis e, para além disso, regista o método Collision no evento GameState.BoxCollision_Event.
+
+- UpdateBox
+  
+  	![image_2025-04-25_184321135](https://github.com/user-attachments/assets/30506162-a536-4fb3-8fcf-f63419d58ab9)
+  
+  	Este método chama a função Move e faz um reset à posição da caixa.
+
+- Move
+  
+  	![image](https://github.com/user-attachments/assets/97c9e6c9-c42e-490b-a7a9-ac2612375a4f)
+    
+  	Este método chama o procedimento Gravity e mexe na posição do objeto em questão.
+
+- Gravity
+
+   	![image](https://github.com/user-attachments/assets/a29a8672-0194-452d-aa5a-bbfc976bf48a)
+
+   	Gravity, como o próprio nome indica, aumenta a gravidade ao longo do tempo, fazendo uma verificação de se a caixa já atingiu o chão e se o tempo de 	jogo estiver a acabar, desativa o desenho da caixa.
+
+- Collision
+
+   	![image](https://github.com/user-attachments/assets/23d8f7bb-938d-478b-b2d7-48e7cab1af84)
+
+  	Verifica se a caixa colide com um objeto. Se houver, aplica differentes efeitos dependendo do número da caixa (por exemplo, se a o número for o 2, 	adiciona pontos mas se for o 4, congela o tempo de jogo). Por fim, muda a cor do objeto para amarelo.
+
+## Defeitos a apontar sobre o jogo:
 -> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";
 
 -> Só se consegue fazer uma ação de cada vez.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

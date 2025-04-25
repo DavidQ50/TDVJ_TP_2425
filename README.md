@@ -129,7 +129,11 @@ Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa
 ## Defeitos a apontar sobre o jogo:
 -> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";
 
--> Só se consegue fazer uma ação de cada vez.
+-> Só se consegue fazer uma ação de cada vez;
+
+-> Não há como escolher personagens e backgrounds diferentes apesar de o jogo possuir os pngs dos mesmos;
+
+-> Não há botão de replay ou exit ao terminar um jogo;
 
 
 

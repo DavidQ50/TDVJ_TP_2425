@@ -4,17 +4,17 @@ David Querido 33219;
 Gabriel Solinos 31487; 
 Paulo Pinto 31474;
 
-Análise do jogo "Bubble Trouble"
+- Análise do jogo "Bubble Trouble"
 
 Bubble Trouble é um jogo bidimensional com inteligência artificial(Bot) na qual dois jogadores competem entre si, neste caso, o jogador e a inteligência artificial. O objetivo principal do jogo é acertar o máximo de bolas possíveis para obter uma pontuação mais alta. Ambos os jogadores têm um determinado valor para a sua saúde e também para os pontos. O jogo termina assim que um dos jogadores fica sem vida ou quando o tempo acabar e o jogador com a pontuação mais alta vence.
 
-Progressão no jogo:
+- Progressão no jogo:
 
 No jogo, existe bolas de 4 cores(vermelha, azul, amarela e preta). A bola vermelha pertence a nós enquanto que a bola azul pertence ao adversário. A bola amarela pertence a ambos os jogaodores e o seu objetivo é adicionar alguma ação. A bola preta é uma bola rolante que aparece a cada meio minuto e que não pode ser rebatida cujo seu objetivo é atingir as pernas dos jogadores e diminuir a saúde dos jogaodres.
 Um tiro só pode ser disparado quando não houver balas no ar. Um jogador só pode atirar uma flecha enquanto estiver parado no chão e imóvel. Acertar qualquer uma das bolas(vermelha, azul e amarela) fará com que a bola exploda em duas bolas menores. Se algum dos jogadorores acertar a bola do adversário não explodirá a bola dele. Durante o jogo, caixas irão cair do céu. Existem 5 tipos de caixas: mais saúde, menos saúde, mais pontuação, menos pontuação, mais tiros e para congelar o jogador. Ao apanhar uma caixa "mais tiros" , pode disparar vários tiros ao mesmo tempo(até 3 tiros). A caixa "menos/mais pontuação/saúde" diminui ou aumenta 50 pontos/saúde. A caixa que congela o jogador por alguns segunods. O jogo tem a duração de 120 segundos e cada jogador tem 1000 pontos de saúde. Um tiro normal lhe dará 50 pontos, mas se a bola o atingir perderá 50 pontos de saúde. Uma bola
 amarela é uma bola cuja saúde e o número de pontos que ela lhe dá são números aleatórios entre 0 e 100. Uma bola preta reduzirá a sua saúde em 20 pontos.O jogo termina se o tempo acabar ou se um dos jogadores ficar sem saúde.
 
-Comandos para o jogo:
+- Comandos para o jogo:
 
 Movimentos:
 Movimentar para a direita - Pressionar a seta direita.
@@ -31,7 +31,7 @@ Pasta Content:
 	  MenuState.cs - Ficheiro que produz a tela do menu principal;
 	  State.cs - Ficheiro que serve como base para os outros estados.
 
-Classes:
+- Classes:
 
 Animation.cs:
 A classe Animation representa uma animação no contexto de um jogo, utilizando a biblioteca Microsoft.Xna.Framework. Ela gerencia quadros (frames), controle e transição de animações. Possui propriedades como Anime (representa a animação atual, armazenando informações como texturas e recortes), CurrentIndex (índice atual do quadro) e CurrentFrame (controla o avanço dos quadros). A classe tem múltiplos construtores que inicializam animações com diferentes parâmetros, como herói, estado, posição, cor, rotação, escala e profundidade. O método Update atualiza texturas, regiões de recorte (SourceRectangle) e gerencia a transição entre quadros com base no ritmo (pace) da animação, reiniciando o ciclo quando necessário. A cada atualização, ele ajusta propriedades visuais e desenha o quadro atual na tela. Assim, a classe Animation é usada para criar e gerenciar animações fluidas no jogo.
@@ -72,25 +72,28 @@ A classe SurpriseBox representa uma caixa surpresa no jogo "Bubble Trouble". Ela
 TheDic.cs:
 A classe estática TheDic serve como um repositório centralizado para armazenar e gerenciar informações relacionadas aos heróis (Heros) e seus estados (States) no jogo "Bubble Trouble". Ela utiliza um dicionário aninhado para organizar páginas (Page) associadas a cada combinação de herói e estado. A propriedade estática Big é um dicionário que mapeia heróis para outro dicionário, onde cada estado do herói está associado a um objeto Page, organizando os dados de maneira clara e eficiente para acesso rápido. O método estático Init inicializa o dicionário Big, iterando sobre todos os heróis e estados definidos nas enumerações Heros e States. Para cada combinação de herói e estado, o método verifica se existe um arquivo correspondente no diretório /Content/<hero>/<state>.xnb. Caso o arquivo exista, ele cria um objeto Page para essa combinação e o adiciona ao dicionário. A classe carrega dinamicamente os dados necessários durante a inicialização, garantindo que apenas os estados e heróis com arquivos válidos sejam adicionados ao dicionário. Isso permite gerenciar facilmente os recursos associados aos heróis e estados no jogo, como animações ou texturas. Em resumo, a classe TheDic organiza e gerencia dados de heróis e seus estados, carregando recursos de forma dinâmica e armazenando-os em uma estrutura de dicionário aninhado, o que facilita o gerenciamento eficiente de recursos no jogo.
 
-Análise a partes do código:
-- SurpriseBox.cs
-	Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando ocorre uma colisão.
+- Análise a partes do código:
+	SurpriseBox.cs
+		Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando 		ocorre uma colisão.
 	
- ->Variáveis
+	 ->Variáveis
  
-![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
-gravitation: Simula a gravidade;
+	![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
+
+	gravitation: Simula a gravidade;
     
-drc: Direção do movimento;
+	drc: Direção do movimento;
 
-timeDisappearBox: Tempo até a caixa desaparecer;
+	timeDisappearBox: Tempo até a caixa desaparecer;
 
-numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
+	numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
 
 
-Defeitos a apontar sobre o jogo:
--> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";
--> Só se consegue fazer uma ação de cada vez.
+- Defeitos a apontar sobre o jogo:
+
+	-> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";
+
+	-> Só se consegue fazer uma ação de cada vez.
 
 
 

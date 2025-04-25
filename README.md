@@ -74,7 +74,9 @@ A classe estática TheDic serve como um repositório centralizado para armazenar
 
 Análise a partes do código:
 -> SurpriseBox.cs - Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando ocorre uma colisão.
-	- Variáveis: 
+
+	- Variáveis:
+ 
  		![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
    		gravitation: Simula a gravidade;
      		drc: Direção do movimento;

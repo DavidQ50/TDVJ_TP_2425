@@ -77,11 +77,15 @@ Análise a partes do código:
 	Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa" que interage com o jogador e aplica efeitos diferentes quando ocorre uma colisão.
 	
  ->Variáveis
-  	![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
-   	gravitation: Simula a gravidade;
-     	drc: Direção do movimento;
-       	timeDisappearBox: Tempo até a caixa desaparecer;
-	 numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
+ 
+![image_2025-04-25_170421579](https://github.com/user-attachments/assets/40f0d96f-e9c5-4b3d-8dce-9ee12e15dbcd)
+gravitation: Simula a gravidade;
+    
+drc: Direção do movimento;
+
+timeDisappearBox: Tempo até a caixa desaparecer;
+
+numOfBox: Tipo da caixa surpresa (cada número corresponde a uma caixa com um efeito differente).
 
 
 Defeitos a apontar sobre o jogo:

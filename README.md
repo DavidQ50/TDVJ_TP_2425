@@ -161,11 +161,30 @@ Ficheiro responsável pelo projétil disparado pelo jogador / AI.
   ### BotKeyboard.cs
   Ficheiro responsável pela criação da lógica de movimento e ação de um bot.
 
-  - Variáveis
+- Variáveis
 
-    ![Variáveis](https://github.com/user-attachments/assets/18947661-6fb5-4403-af60-f33432094a42)
+	![Variáveis](https://github.com/user-attachments/assets/18947661-6fb5-4403-af60-f33432094a42)
 
-    
+- Construtor
+  
+  	![Construtor](https://github.com/user-attachments/assets/ce93a2f0-b8d2-45fa-a423-a5076751908c)
+
+- InitBot
+
+  	![InitBot](https://github.com/user-attachments/assets/e9e07b54-1798-4005-bf6c-a1d64bc642fa)
+
+- Input (Override)
+
+  	![InputOverride](https://github.com/user-attachments/assets/3c2e42ac-e6ae-4d27-abcf-4ba7ee84d54a)
+
+- Update
+
+  	![Update](https://github.com/user-attachments/assets/208148e8-2220-45c7-a79c-27c6b90c3143)
+
+- FindClosestBall
+
+  	![findClosestBall](https://github.com/user-attachments/assets/d29e22d4-8252-4a66-94dc-158010a2a0be)
+
 
 
 ## Defeitos a apontar sobre o jogo:

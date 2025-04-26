@@ -1,3 +1,4 @@
+
 # Trabalho prático - Técnicas de desenvolvimento de videojogos.
 
 David Querido 33219
@@ -134,6 +135,13 @@ Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa
 -> Não há como escolher personagens e backgrounds diferentes apesar de o jogo possuir os pngs dos mesmos;
 
 -> Não há botão de replay ou exit ao terminar um jogo;
+
+## Gameplay
+![Captura de ecrã 2025-04-26 113510](https://github.com/user-attachments/assets/6038c29c-3442-457a-8947-bc206f681d4a)
+
+![Captura de ecrã 2025-04-26 113405](https://github.com/user-attachments/assets/529cf994-c7ff-4c3f-b854-63a24574f67a)
+
+![Captura de ecrã 2025-04-26 113323](https://github.com/user-attachments/assets/0a0c4eac-1345-4ad5-b093-6cfb51b1c620)
 
 ## Link do repositório do jogo
 https://github.com/YuvalBakirov/bubble-trouble

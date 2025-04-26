@@ -201,7 +201,7 @@ Ficheiro responsável pela criação da lógica de movimento e ação de um bot.
 
   	![InputOverride](https://github.com/user-attachments/assets/3c2e42ac-e6ae-4d27-abcf-4ba7ee84d54a)
 
-  	Servem para simular os botões que o bot preciona.
+  	Servem para simular os botões que o bot pressiona.
 
 - Update
 

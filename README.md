@@ -165,27 +165,55 @@ Ficheiro responsável pela criação da lógica de movimento e ação de um bot.
 
 	![Variáveis](https://github.com/user-attachments/assets/18947661-6fb5-4403-af60-f33432094a42)
 
+	bot: Representa o bot;
+
+	direction: Direção do movimento (esquerda/direita):
+
+	target: Bola alvo que o bot vai tentar atingir;
+
+	targetDist: Distância até ao alvo;
+
+	isShot: Indica se o bot deve disparar;
+
+	shootDelay: Intervalo mínimo entre disparos;
+
+	shootTime: Marca o momento do último disparo;
+
+	findTargetTime: Marca o momento da última procura do alvo;
+
+	findDelay: Intervalo de tempo para procurar novo alvo;
+
+	isJump: Indica se o bot deve saltar.
+
 - Construtor
   
   	![Construtor](https://github.com/user-attachments/assets/ce93a2f0-b8d2-45fa-a423-a5076751908c)
+
+  	Aqui apenas é chamado o construtor da classe base, pelo que não são iniciadas variáveis diretamente.
 
 - InitBot
 
   	![InitBot](https://github.com/user-attachments/assets/e9e07b54-1798-4005-bf6c-a1d64bc642fa)
 
+  	Inicializa o bot com os seus valores iniciais e chama a função Update assim que estes forem atualizados.
+
 - Input (Override)
 
   	![InputOverride](https://github.com/user-attachments/assets/3c2e42ac-e6ae-4d27-abcf-4ba7ee84d54a)
+
+  	Servem para simular os botões que o bot preciona.
 
 - Update
 
   	![Update](https://github.com/user-attachments/assets/208148e8-2220-45c7-a79c-27c6b90c3143)
 
+  	Esta função atualiza o estado do bot a cada frame permitindo-lhe escolher uma ação com base nas circumstâncias do jogo (saltar, andar, disparar).
+
 - FindClosestBall
 
   	![findClosestBall](https://github.com/user-attachments/assets/d29e22d4-8252-4a66-94dc-158010a2a0be)
 
-
+  	Esta função faz o bot procurar pela bola mais próxima. A variável target é atualizada para indicar esta bola como o alvo.
 
 ## Defeitos a apontar sobre o jogo
 -> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";
@@ -194,7 +222,7 @@ Ficheiro responsável pela criação da lógica de movimento e ação de um bot.
 
 -> Não há como escolher personagens e backgrounds diferentes apesar de o jogo possuir os pngs dos mesmos;
 
--> Não há botão de replay ou exit ao terminar um jogo;
+-> Não há botão de replay ou exit ao terminar um jogo.
 
 ## Gameplay
 ![Captura de ecrã 2025-04-26 113323](https://github.com/user-attachments/assets/0a0c4eac-1345-4ad5-b093-6cfb51b1c620)

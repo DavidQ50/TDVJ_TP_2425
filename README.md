@@ -125,7 +125,38 @@ Ficheiro responsável pela criação de, como o nome indica, uma "caixa surpresa
 
    	![image](https://github.com/user-attachments/assets/23d8f7bb-938d-478b-b2d7-48e7cab1af84)
 
-  	Verifica se a caixa colide com um objeto. Se houver, aplica differentes efeitos dependendo do número da caixa (por exemplo, se a o número for o 2, 	adiciona pontos mas se for o 4, congela o tempo de jogo). Por fim, muda a cor do objeto para amarelo.
+  	Verifica se a caixa colide com um objeto. Se houver, aplica differentes efeitos dependendo do número da caixa (por exemplo, se a o número for o 2, 	adiciona pontos mas se for o 4, congela o tempo de 	jogo). Por fim, muda a cor do objeto para amarelo.
+
+### Fire.cs
+Ficheiro responsável pelo projétil disparado pelo jogador / AI.
+
+- Variáveis
+  
+  	![image](https://github.com/user-attachments/assets/4ec9a567-a5b6-4087-beda-5320bda59e8e)
+
+  	BallColor: Muda a cor da bola;
+
+  	shooter: Variável usada para armazenar quem disparou o projétil;
+  
+  	ccc: Controla o crescimento vertical do tiro;
+
+- Construtor
+  
+	![image](https://github.com/user-attachments/assets/35e1afec-ba64-4b6c-b15d-d7b93994be9c)
+
+	O construtor é usado para inicializar as variáveis, e regista os métodos Update e CheckCollision em métodos globais (Update_event e FireCollision_Event, respetivamente)
+
+- CheckCollision
+  
+	![image](https://github.com/user-attachments/assets/5e76ae91-67a4-4815-97c4-b58e74994296)
+
+ 	Cria uma "hitbox" para o projétil e verifica se este tocou no topo da tela ou se colidiu com uma bola. No caso de colidir com algo, o projétil é desativado (isDraw = false) e o nº de tiros do atirador 	diminui (fireCount). Para além disso, se colidir com uma bola, remove-a, adiciona pontos e divide-a em duas bolas menores (se for grande o suficiente para ser dividida).
+
+- Update
+
+  	![image](https://github.com/user-attachments/assets/121ff543-be00-410e-9f99-560fba53255b)
+
+  	No caso do projétil estar ativo, aumenta o tamanho vertical do mesmo por 10 unidades a cada atualização. Se não estiver, dá reset à ccc. 
 
 ## Defeitos a apontar sobre o jogo:
 -> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";

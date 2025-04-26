@@ -156,7 +156,12 @@ Ficheiro responsável pelo projétil disparado pelo jogador / AI.
 
   	![image](https://github.com/user-attachments/assets/121ff543-be00-410e-9f99-560fba53255b)
 
-  	No caso do projétil estar ativo, aumenta o tamanho vertical do mesmo por 10 unidades a cada atualização. Se não estiver, dá reset à ccc. 
+  	No caso do projétil estar ativo, aumenta o tamanho vertical do mesmo por 10 unidades a cada atualização. Se não estiver, dá reset à ccc.
+
+  ### BotKeyboard.cs
+  Ficheiro responsável pela criação da lógica de movimento e ação de um bot.
+
+  - Variáveis
 
 ## Defeitos a apontar sobre o jogo:
 -> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";

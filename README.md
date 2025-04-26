@@ -163,6 +163,11 @@ Ficheiro responsável pelo projétil disparado pelo jogador / AI.
 
   - Variáveis
 
+    ![Variáveis](https://github.com/user-attachments/assets/18947661-6fb5-4403-af60-f33432094a42)
+
+    
+
+
 ## Defeitos a apontar sobre o jogo:
 -> No ínicio do jogo, os jogadores não tem uma posição inicial junto ao chão, pelo que "caem do céu";
 
